@@ -1,0 +1,202 @@
+*{
+    padding:5px;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+nav{
+    background-color: rgba(0, 0, 255, 0.808);
+    text-align: left;
+    
+}
+nav .Right{
+    float: right;
+    transform: translateY(-10px);
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding:10px 10px;
+    font-size: 20px;
+}
+nav a:hover{
+background-color: darkblue;
+color:brown;
+}
+.shade{
+    background-image:linear-gradient(rgba(0, 0, 255, 0.808),rgba(0, 0, 255, 0.9));
+    height:30px;
+    
+}
+img{
+position:relative;
+left:50%;
+transform: translate(-50%,-70px);
+z-index:2;
+}
+.Polygon{
+    height:70vh;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    background-image:linear-gradient(to right,rgba(222, 184, 135, 0.808),rgba(222, 184, 135, 0.518)),url(pics/images.jpg);
+    background-size: cover;
+    background-repeat: none;
+    transform: translateY(-150px);
+    z-index:0;
+    border-radius: 5px;
+}
+.Polygon .container{
+   
+    position:relative;
+    
+    top:50%;
+    transform: translate(0,-70%);
+}
+.container{
+    text-align: center;
+    color:white;
+    text-transform: uppercase;
+}
+.container .text-box1{
+    font-size: 50px;
+    letter-spacing: 10px;
+    animation: FadeInFromTop 4s ease-out;
+}
+.container .text-box2{
+    font-size: 20px;
+    letter-spacing: 6px;
+    animation: FadeInFromBottom 4s ease-out;
+    box-shadow: 0 10px 20px rgb(0, 0, 0,0.2);
+}
+@keyframes FadeInFromTop {
+    0%{
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 100%;
+    
+    }
+}
+@keyframes FadeInFromBottom {
+    0%{
+        transform: translateY(+15px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+/* scroll wheel */
+.scroll-down {
+    height: 50px;
+    width: 30px;
+    border: 2px solid black;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    animation: BounceUpDown 3s ease-in-out infinite;
+  }
+  .scroll-down::before,
+  .scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid black;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+  }
+  .scroll-down::before {
+    top: 30%;
+    animation-delay: 0.3s;
+    /* animation: scroll-down 1s ease-in-out infinite; */
+  }
+  
+  @keyframes scroll-down {
+    0% {
+      /* top:20%; */
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      top: 90%;
+      opacity: 0;
+    }
+  }
+  @keyframes BounceUpDown {
+    0%{
+        transform: translateY(0px);
+
+    }
+    50%{
+        transform: translateY(30px);
+
+    }
+    100%{
+        transform: translateY(0px);
+    }
+  }
+ .gamemodeIMG{
+    transform: translate(-50%,70px);
+ }
+  .part2{
+    transform: translate(20px,-100px);position:relative
+  }
+.part2 .container__part2{
+    background-color: blueviolet;
+    height:120vh;
+    clip-path: polygon(0% 20%,90% 0%,90% 80%,0 100%);
+}
+.part2 .classy_design{
+    background-color: rgb(0, 26, 255);
+    height:120vh;
+    clip-path: polygon(0% 20%,90% 0%,90% 80%,0 100%);
+    transform: translate(10vh,-110vh);
+    
+}
+.TextGameMode{
+    
+    position:relative;
+    top:-1250px;
+    left:200px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+.Creator{
+    position:relative;
+    top:-1150px;
+    left:200px;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    display: flex;
+    
+}
+.Creator input{
+    transform: translate(-75%,40px);
+    
+}   
+.Creator .TableUSER{
+    background-color: rgba(255, 255, 255, 0.308);
+    border: 2px solid rgba(0, 0, 0, 0.274);
+    transform: translate(35px,-70px);
+    width:300px;height:300px;
+}
+
+
