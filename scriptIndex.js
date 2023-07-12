@@ -1,14 +1,15 @@
-var rows=document.getElementById("RowInputForTable").value;
-var columns=document.getElementById("ColumnInputForTable").value;
-var table=document.getElementById("tableUSER");
-alert(rows+","+columns);
-if(rows>=3){
-    for(var i=0;i<rows-3;i++){
-        table.insertRow(-1);
-    }
-}
-else{
-    for(var i=0;i<3-rows;i++){
-        table.deleteRow(-1);
-    }
-}
+var ROW=3, COLUMN=3;
+setTimeOut(function(){
+    var rows=document.getElementById("RowInputForTable").value;
+    var columns=document.getElementById("ColumnInputForTable").value;
+    var table=document.getElementById("tableUSER");
+    
+    //write your algorithm here!
+    if(rows==4)
+    alert("4");
+},1000);
+
+
+
+
+

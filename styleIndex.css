@@ -193,10 +193,52 @@ z-index:2;
     
 }   
 .Creator .TableUSER{
-    background-color: rgba(255, 255, 255, 0.308);
-    border: 2px solid rgba(0, 0, 0, 0.274);
+    
     transform: translate(35px,-70px);
     width:300px;height:300px;
 }
+.Creator .TableUSER table{
+    /*background-color: antiquewhite;*/
+    transform:translate(50%,70%) scale(150%);
+}
+.Creator .TableUSER table td{
+    border:2px solid rgba(255, 255, 255, 0.877);
+    width:40px;height:40px;
+}
+.Creator button{
+    transform: translate(-480px,100px);
+    border-radius: 50px;
+    border:2px solid white;
+    width:150px;
+    font-weight: 600;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.733);
+    text-transform: uppercase;
+}
+.Creator button:hover{
+    transform: translate(-480px,100px) scale(130%);
+    box-shadow:0 3px 15px white
+}
 
 
+
+
+
+
+
+
+
+.Creator button::after {
+    content: "";
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    transition: all .6s; }
+.Creator button:hover::after {
+    transform: scaleX(1.5) scaleY(1.7);
+    opacity: 0; }
