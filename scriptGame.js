@@ -5,8 +5,8 @@ var otherTile;
 function cutImageIntoParts(image, m, n) {
     var canvas = document.createElement('canvas');
     var context = canvas.getContext('2d');
-    var width = image.width / n;
-    var height = image.height / m;
+    var width = (image.width / n) - 2;
+    var height = (image.height / m) - 2;
     var parts = [];
     
     /*var imgs=document.createElement("img");
@@ -50,19 +50,29 @@ function cutImageIntoParts(image, m, n) {
   inputImage.onload = function () {
     var m = parseInt(prompt('Enter the number of rows (m):'));
     var n = parseInt(prompt('Enter the number of columns (n):'));
-    var sizeHeight=120*n;var sizeWidth=120*m;
+    
+    
+    var sizeHeight=(360/m)-(6*1)-6;
+    var sizeWidth=(360/n)-(6*1)-6;
     var imageParts = cutImageIntoParts(inputImage, m, n);
-    var a=document.getElementById("retryes");
+    
+    alert(sizeHeight);
+    alert(sizeWidth);
+    var a=document.getElementById('retryes');
     a.style.height='${sizeHeight}';
     a.style.width='${sizeWidth}';
+
+    alert("height:"+document.get);
     
     // Access each image part using the array index
     for (var i = 0; i < imageParts.length; i++) {
+        //alert(imageParts.length);
       var imagePart = imageParts[i];
       var retriy= document.getElementById("retryes");
       // Do something with each image part, such as displaying it on the page
-      retriy.appendChild(imagePart).className="tile"+(i+1);
-      var tile=document.getElementsByClassName("tile"+(i+1));
+      retriy.appendChild(imagePart);
+      //let tile=document.getElementsByClassName("tile"+(i+1));
+
       
     }
   }
