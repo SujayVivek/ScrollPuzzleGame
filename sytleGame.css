@@ -1,5 +1,5 @@
 BODY { 
-    background: #AAAAAA;
+    background:pink;
     text-align: center;
     }
     
@@ -41,7 +41,7 @@ BODY {
         width:360px;
         height:360px;
         background-color: aqua;
-        border: 0px solid black;
+        border: 10px solid black;
 
         margin: 0 auto;
         display:flex;
@@ -54,4 +54,7 @@ BODY {
         border:1px solid rgb(10, 10, 10);
         position: relative;
         
+      }
+      h1{
+        color:rgb(255, 255, 255);
       }
