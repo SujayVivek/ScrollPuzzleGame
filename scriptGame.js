@@ -136,7 +136,7 @@ function dragDrop(){
     otherTile=this;
 }
 function dragEnd(){
-  /*if (!otherTile==whiteTile) {
+ /*if (!otherTile==whiteTile) {
     return;
 }*/
 
