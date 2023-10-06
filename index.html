@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <title>PuzzleGo</title>
+    <title>GoQuiz</title>
     <link rel="stylesheet" href="styleIndex.css">
 </head>
 <body><header>
@@ -15,14 +15,14 @@
         <a href="#" class="Right">Login</a>
     </nav>
     <div class="shade"></div>
-    <img src="./pics/Cool Text - PuzzleGo 439237184193147.png" alt="">
+    <img src="./pics/Cool Text - GoQuiz 444629484382677.png" alt="">
 
 </header>
 
 <div class="Polygon">
     <div class="container">
         <div class="text-box1">Are you ready</div>
-        <div class="text-box2">to solve the toughest of puzzles</div>
+        <div class="text-box2">to solve the toughest of Questions</div>
 
     </div>
 </div>
@@ -38,18 +38,12 @@
             Choose your GameMode
         </div>
         <div class="Creator">
-            <div class="Rows" id="RowInputForTable">Rows
-                <input type=" text" value="3">
+            <div class="Rows" id="RowInputForTable">Number of Questions (Out of 10)
+                <input type=" text" value="3" id="NumQval">
             </div>
-            <div class="Columns" id="ColumnInputForTable"><span>Columns</span>
-                <input type=" text" value="3">
-            </div>
-            <div class="TableUSER" id="tableUSER"><table cellspacing="6px">
-                    <tr><td></td><td></td><td></td></tr>
-                    <tr><td></td><td></td><td></td></tr>
-                    <tr><td></td><td></td><td></td></tr>
-            </table>
-            <button onclick="window.location.href='game.html';" window.location.target="_blank">Launch Game</button>
+            
+            
+            <button id="Submit" onclick="window.location.href='game.html';" window.location.target="_blank">Launch Game</button>
         </div>
         </div>
     </div>

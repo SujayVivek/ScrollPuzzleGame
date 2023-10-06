@@ -1,46 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="sytleGame.css">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="stylesGame.css">
 </head>
 <body>
-    <h1>Instructions:</h1><br>
-    <p><li>Complete the puzzle within the least number of tries</li>
-        <li>This is a new variation, where you can move all the tiles: try completing the picture within the least tries!</li>
-        <li>Drag and Drop to exchange the tiles, and do it as quick as possible!</li>
-        <li>All the best and Have Fun</li>
-        <h1>DRAG AND DROP ONLY THE WHITE TILE</h1>
-    </ul></p>
-    <br>
-
-    <!--<div class="imgpart" id="table" style="display: table;">
-        <div id="row1" style="display: table-row;">
-            <div id="cell11" class="tile1" onClick="clickTile(1,1);"></div>
-            <div id="cell12" class="tile2" onClick="clickTile(1,2);"></div>
-            <div id="cell13" class="tile3" onClick="clickTile(1,3);"></div>
-         </div>
-         <div id="row2" style="display: table-row;">
-            <div id="cell21" class="tile4" onClick="clickTile(2,1);"></div>
-            <div id="cell22" class="tile5" onClick="clickTile(2,2);"></div>
-            <div id="cell23" class="tile6" onClick="clickTile(2,3);"></div>
-         </div>
-         <div id="row3" style="display: table-row;">
-            <div id="cell31" class="tile7" onClick="clickTile(3,1);"></div>
-            <div id="cell32" class="tile8" onClick="clickTile(3,2);"></div>
-            <div id="cell33" class="tile9" onClick="clickTile(3,3);"></div>
-         </div>
-        </div>-->
-        <div class="retry" id="retryes">
-            
+    <div class="quiz-container">
+        <h1>Quiz Time!</h1>
+        <div class="question">
+            <p id="question-text">Question<div id="num"><!--Qn Num goes here--></div>:<br><br><div id="QuestionName"><!--questions Name here--></div></p>
+            </div>
+            <div id="Qa"><input type="radio" name="q1" id="q1a" value="a">
+            <label for="q1a">A: 3</label></div>
+            <div id="Qb"><input type="radio" name="q1" id="q1b" value="b">
+            <label for="q1b">B: 4</label></div>
+            <div id="Qc"><input type="radio" name="q1" id="q1c" value="c">
+            <label for="q1c">C: 5</label></div>
+            <div id="Qd"><input type="radio" name="q1" id="q1d" value="d">
+            <label for="q1d">D: 9</label></div>
         </div>
         
-        <h1>Turns:<span id="turnsz">0</span></h1>
-    
-
+        <button id="submit-button">Submit</button>
+        <div id="result"></div>
+    </div>
+    <script src="scriptGame.js"></script>
 </body>
-<script src="scriptGame.js"></script>
 </html>
